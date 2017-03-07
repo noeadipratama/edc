@@ -5,7 +5,7 @@
 
   </head>
 
-  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+  <body class="sidebar-mini wysihtml5-supported skin-red-light">
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -48,6 +48,7 @@
                       
                                             
 
+
                                             <div class="form-group">
                                             <label>Nama User</label>
                                             <input type="text" name="nm_user" class="form-control" placeholder="Nama User">
@@ -60,8 +61,9 @@
 
                                             <div class="form-group">
                                             <label>Password</label>
-                                            <input type="password" name="password" class="form-control" placeholder="Password" value="cmnc12345">
+                                            <input type="password" name="password" class="form-control" placeholder="Password" value="12345">
                                             </div>
+
                       
                                             <div class="form-group">
                                             <label>Atasan</label>
@@ -77,6 +79,8 @@
                                             ?>
                                             </select> 
                                             </div>
+
+                                            
 
                                             <div class="form-group">
                                             <label>Level</label>
@@ -159,6 +163,7 @@
                                         <tr>
                                             <th nowraps>Options</th> 
                                             <th nowraps>ID User</th>
+                                           
                                             <th nowraps>Nama User</th>
                                             <th nowraps>Username</th>
                                            
@@ -177,17 +182,18 @@
                                                         foreach ($listuser->result() as $rows) {
                                                       ?>
                                                         <tr>
-                                                                                <td nowrap>
+                                                                                <td nowrap><? if($session_level == 1 ){ ?>
                                                                                 <a href="user/delete/<?= $rows->id_user?>">
-                                                                                <button class="btn btn-primary" >
-                                                                                    Delete
-                                                                                </button></a>
+                                                                                <button class="btn btn-danger" >
+                                                                                        Delete
+                                                                                </button></a><? } ?>
                                                                                 <a href="user/formupdate/<?= $rows->id_user?>">
-                                                                                <button class="btn btn-primary" >
+                                                                                <button class="btn btn-warning" >
                                                                                     Update
                                                                                 </button></a>                                                   
                                                                                 </td>
                                                           <td><?= $rows->id_user?></td>
+                                                         
                                                           <td><?= $rows->nm_user?></td>
                                                                                 <td><?= $rows->username?></td>
                                                                                

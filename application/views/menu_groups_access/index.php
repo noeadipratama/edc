@@ -5,7 +5,7 @@
 
   </head>
 
-  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+  <body class="sidebar-mini wysihtml5-supported skin-red-light">
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -121,11 +121,11 @@
                                                       ?>
                                                         <tr >
                                                                                 <td nowrap><a href="menu_groups_access/delete/<?= $rows->id_menu_groups_access?>">
-                                                                                    <button class="btn btn-primary" >
+                                                                                    <button class="btn btn-danger" >
                                                                                         Delete
                                                                                     </button></a>
                                                                                     <a href="menu_groups_access/formupdate/<?= $rows->id_menu_groups_access?>">
-                                                                                    <button class="btn btn-primary" >
+                                                                                    <button class="btn btn-warning" >
                                                                                         Update
                                                                                     </button></a>                                                        
                                                                                 </td>

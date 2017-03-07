@@ -40,6 +40,8 @@
 		return $this->db->get();
 	}
 
+	
+
 	function combobox_cabang() 
 	{
 		//Variable pendukung query	

@@ -64,7 +64,7 @@ $autoload['libraries'] = array('database','session','form_validation','html2pdf'
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url','form','security','terbilang' );
+$autoload['helper'] = array('url','form','security','terbilang','fungsidate' );
 
 
 /*

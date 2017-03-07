@@ -5,7 +5,7 @@
 
   </head>
 
-  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+  <body class="sidebar-mini wysihtml5-supported skin-red-light">
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -111,12 +111,12 @@
                                                         foreach ($listcabang->result() as $rows) {
                                                       ?>
                                                         <tr>
-                                                        <td nowrap=""><a href="cabang/delete/<?= $rows->id_cabang?>">
-                                                                                    <button class="btn btn-primary" >
+                                                        <td nowrap=""><? if($session_level == 1 ){ ?><a href="cabang/delete/<?= $rows->id_cabang?>">
+                                                                                    <button class="btn btn-danger" >
                                                                                         Delete
-                                                                                    </button></a>
+														</button></a><? } ?>
                                                                                     <a href="cabang/formupdate/<?= $rows->id_cabang?>">
-                                                                                    <button class="btn btn-primary" >
+                                                                                    <button class="btn btn-warning" >
                                                                                         Update
                                                                                     </button></a>                                                        
                                                                                 </td>

@@ -2,9 +2,9 @@
         <!-- Logo -->
         <a href="<?= base_url()?>" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>EDC</b></span>
+          <span class="logo-mini"><b>IMS</b></span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>EDC</b> KSU Sarina</span>
+          <span class="logo-lg"><b>IMS</b> Indoproc</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -35,13 +35,13 @@
                         </div>
                         </li>
               
-              <li>
+              <!-- <li>
                 <a href="#" data-toggle="control-sidebar"> <i class="fa fa-bank"></i> <?= $cabang['nm_cabang']?></a>
-              </li>
+              </li> 
 
                <li>
                 <a href="#" data-toggle="control-sidebar"> <i class="fa fa-bank"></i> <?= $perusahaan['nm_perusahaan']?></a>
-              </li>
+              </li> -->
               
               <li>
                 <a href="#" data-toggle="control-sidebar"> <i class="fa fa-user"></i> <?= $nm_user?></a>

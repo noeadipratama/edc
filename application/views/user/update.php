@@ -5,7 +5,7 @@
 
   </head>
 
-  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+  <body class="sidebar-mini wysihtml5-supported skin-red-light">
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -46,6 +46,8 @@
                                             <input type="text" name="id_user" class="form-control" placeholder="ID User" value="<?= $rows->id_user?>">
                                             </div>
 
+                                           
+
                                             <div class="form-group">
                                             <label>Nama User</label>
                                             <input type="text" name="nm_user" class="form-control" placeholder="Nama User" value="<?= $rows->nm_user?>">
@@ -60,6 +62,8 @@
                                             <label>Password</label>
                                             <input type="password" name="password" class="form-control alert-danger" placeholder="Password" value="">
                                             </div>
+
+                                           
 
                                             <div class="form-group">
                                             <label>Atasan</label>
@@ -89,7 +93,9 @@
                                             }
                                             ?>
                                             </select> 
-                                            </div> 
+                                            </div>
+
+                                            
 
                                             <div class="form-group">
                                             <label>Cabang</label>

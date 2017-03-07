@@ -56,6 +56,7 @@ class User extends CI_Controller {
 
 		$data = array(
 		
+   		
    		'nm_user' => $this->input->post ('nm_user'),
    		'username' => $this->input->post ('username'),
    		'password' => do_hash($this->input->post ('password'), 'md5'),
@@ -142,12 +143,13 @@ class User extends CI_Controller {
 		$id_user = $this->input->post ('id_user');
 		if(empty($d)){
 		$data = array(
-		
+	
    		'nm_user' => $this->input->post ('nm_user'),
    		'username' => $this->input->post ('username'),
    		'id_level' => $this->input->post ('id_level'),
    		'id_atasan' => $this->input->post ('id_atasan'),
    		'id_cabang' => $this->input->post ('id_cabang'),
+   		
    		'id_perusahaan' => $this->input->post ('id_perusahaan'),
    		'active' => $this->input->post ('active')	
 		);
@@ -161,6 +163,7 @@ class User extends CI_Controller {
    		'id_level' => $this->input->post ('id_level'),
    		'id_atasan' => $this->input->post ('id_atasan'),
    		'id_cabang' => $this->input->post ('id_cabang'),
+   		
    		'id_perusahaan' => $this->input->post ('id_perusahaan'),
    		'active' => $this->input->post ('active')	
 		);	}

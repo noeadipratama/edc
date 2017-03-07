@@ -5,7 +5,7 @@
 
   </head>
 
-  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+  <body class="sidebar-mini wysihtml5-supported skin-red-light">
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
