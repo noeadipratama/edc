@@ -5,7 +5,11 @@
 
   </head>
 
+<<<<<<< HEAD
   <body class="sidebar-mini wysihtml5-supported skin-red-light">
+=======
+  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>

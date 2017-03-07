@@ -50,8 +50,13 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
+<<<<<<< HEAD
 $db['default']['password'] = 'P@ssw0rd!@#';
 $db['default']['database'] = 'inventory';
+=======
+$db['default']['password'] = '';
+$db['default']['database'] = 'edc';
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

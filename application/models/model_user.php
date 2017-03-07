@@ -40,8 +40,11 @@
 		return $this->db->get();
 	}
 
+<<<<<<< HEAD
 	
 
+=======
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
 	function combobox_cabang() 
 	{
 		//Variable pendukung query	

@@ -2,9 +2,15 @@
         <!-- Logo -->
         <a href="<?= base_url()?>" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
+<<<<<<< HEAD
           <span class="logo-mini"><b>IMS</b></span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-lg"><b>IMS</b> Indoproc</span>
+=======
+          <span class="logo-mini"><b>EDC</b></span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>EDC</b> KSU Sarina</span>
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -35,6 +41,7 @@
                         </div>
                         </li>
               
+<<<<<<< HEAD
               <!-- <li>
                 <a href="#" data-toggle="control-sidebar"> <i class="fa fa-bank"></i> <?= $cabang['nm_cabang']?></a>
               </li> 
@@ -42,6 +49,15 @@
                <li>
                 <a href="#" data-toggle="control-sidebar"> <i class="fa fa-bank"></i> <?= $perusahaan['nm_perusahaan']?></a>
               </li> -->
+=======
+              <li>
+                <a href="#" data-toggle="control-sidebar"> <i class="fa fa-bank"></i> <?= $cabang['nm_cabang']?></a>
+              </li>
+
+               <li>
+                <a href="#" data-toggle="control-sidebar"> <i class="fa fa-bank"></i> <?= $perusahaan['nm_perusahaan']?></a>
+              </li>
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
               
               <li>
                 <a href="#" data-toggle="control-sidebar"> <i class="fa fa-user"></i> <?= $nm_user?></a>

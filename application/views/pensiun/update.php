@@ -5,11 +5,7 @@
 
   </head>
 
-<<<<<<< HEAD
-  <body class="sidebar-mini wysihtml5-supported skin-red-light">
-=======
   <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
->>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -21,7 +17,7 @@
         <!-- Judul Halaman -->
         <section class="content-header">
           <h1>
-            Perusahaan
+            pensiun
           </h1>
         </section>
 
@@ -34,47 +30,55 @@
                     <div class="panel panel-default">
                         <!-- panel-heading -->
                         <div class="panel-heading">
-                            Form Update Perusahaan
+                            Form Update pensiun
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                                             <?php                                                        
-                                            foreach ($listperusahaanselect->result() as $rows) {
+                                            foreach ($listpensiunselect->result() as $rows) {
                                             ?>
                                             <?php echo validation_errors(); ?>
 
-                                            <?php echo form_open('perusahaan/Update'); ?>
-                                            
+                                            <?php echo form_open('pensiun/Update'); ?>
+                                          
                                             <div class="form-group">
-                                            <label>ID Perusahaan</label>
-                                            <input type="text" name="id_perusahaan" class="form-control" placeholder="ID perusahaan" value="<?= $rows->id_perusahaan?>" readonly>
+                                            <label>No Pensiun</label>
+                                            <input type="text" name="no_pensiun" readonly class="form-control" placeholder="No Pensiun" value="<?= $rows->no_pensiun?>">
                                             </div>
 
                                             <div class="form-group">
-                                            <label>Perusahaan</label>
-                                            <input type="text" name="nm_perusahaan" class="form-control" placeholder="Name perusahaan" value="<?= $rows->nm_perusahaan?>">
+                                            <label>No Rekening</label>
+                                            <input type="text" name="no_rekening" class="form-control" placeholder="No Rekening" value="<?= $rows->no_rekening?>">
+                                            </div>
+
+                                            <div class="form-group">
+                                            <label>No KTP</label>
+                                            <input type="text" name="no_ktp" class="form-control" placeholder="No KTP" value="<?= $rows->no_ktp?>">
                                             </div>                                            
 
-
                                             <div class="form-group">
-                                            <label>Jenis</label>
-                                            <select class="form-control" name="jenis">
-                                            <option value="1" <?php if ($rows->jenis == 1){echo set_select('myselect', '1',TRUE);} ?> >Pusat</option>
-                                            <option value="2" <?php if ($rows->jenis == 2){echo set_select('myselect', '2',TRUE);} ?> >Subcon</option>                                            
-                                            </select> 
+                                            <label>Nama Pensiun</label>
+                                            <input type="text" name="nm_pensiun" class="form-control" placeholder="Name Pensiun" value="<?= $rows->nm_pensiun?>">
                                             </div>
 
                                             <div class="form-group">
-                                            <label>Active</label>
-                                            <select class="form-control" name="active">
-                                            <option value="1" <?php if ($rows->active == 1){echo set_select('myselect', '1',TRUE);} ?> >Active</option>
-                                            <option value="0" <?php if ($rows->active == 0){echo set_select('myselect', '0',TRUE);} ?> >Deactive</option>                                            
-                                            </select> 
+                                            <label>Tgl Lahir</label>
+                                            <input type="text" name="tgl_lahir_pensiun" class="form-control" placeholder="YYYY-MM-DD" value="<?= $rows->tgl_lahir_pensiun?>">
+                                            </div>
+
+                                            <div class="form-group">
+                                            <label>Alamat Pensiun</label>
+                                            <input type="text" name="alamat_pensiun" class="form-control" placeholder="Alamat Pensiun" value="<?= $rows->alamat_pensiun?>">
+                                            </div>
+
+                                            <div class="form-group">
+                                            <label>No Telp</label>
+                                            <input type="text" name="no_tlp" class="form-control" placeholder="No Tlp" value="<?= $rows->no_tlp?>">
                                             </div>
 
                                             <div class="form-group">
                                             <input type="submit" value="Save" class="btn btn-primary">
-                                            <a href="<?=base_url();?>index.php/perusahaan"><input type="button" value="Cancel" class="btn btn-default"></a>
+                                            <a href="<?=base_url();?>index.php/pensiun"><input type="button" value="Cancel" class="btn btn-default"></a>
                                             </div>
                                             <?php echo form_close(); ?>
                                             <? } ?>  
@@ -107,4 +111,6 @@
     });
     </script>
   </body>
+  
 </html>
+

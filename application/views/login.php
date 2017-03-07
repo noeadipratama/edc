@@ -42,8 +42,13 @@
                              
                         <?php echo form_close(); ?>
                         <div class="web-description">
+<<<<<<< HEAD
                         <h5 align="center">Copyright &copy; 2016 Inventory Management System</h5>
                         <h5 align="center">Indoproc</h5>
+=======
+                        <h5 align="center">Copyright &copy; 2016 EDC</h5>
+                        <h5 align="center">KSU Sarina</h5>
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
                         </div>
                     </div>
 					

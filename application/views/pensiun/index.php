@@ -5,11 +5,7 @@
 
   </head>
 
-<<<<<<< HEAD
-  <body class="sidebar-mini wysihtml5-supported skin-red-light">
-=======
   <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
->>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -21,7 +17,7 @@
         <!-- Judul Halaman -->
         <section class="content-header">
           <h1>
-            Perusahaan
+            Pensiun
           </h1>
         </section>
 
@@ -35,7 +31,7 @@
                         <div class="panel-heading">
                             <!-- Button trigger modal -->
                             <button class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-                                Add Perusahaan
+                                Add Pensiun
                             </button>
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -43,33 +39,50 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="Form-add-perusahaan" id="myModalLabel">Form Add Perusahaan</h4>
+                                            <h4 class="Form-add-pensiun" id="myModalLabel">Form Add Pensiun</h4>
                                         </div>
                                         <div class="modal-body">
                       <?php echo validation_errors(); ?>
 
-                      <?php echo form_open('perusahaan/insert'); ?>
+                      <?php echo form_open('pensiun/insert'); ?>
                       
-                      <div class="form-group">
-                                            <label>Perusahaan</label>
-                                            <input type="text" name="nm_perusahaan" class="form-control" placeholder="Name perusahaan">
-                      </div>
+                                            <div class="form-group">
+                                            <label>No Pensiun</label>
+                                            <input type="text" name="no_pensiun" class="form-control" placeholder="No Pensiun">
+                                            </div>
 
                                             <div class="form-group">
-                                            <label>Jenis</label>
-                                            <select class="form-control" name="jenis">
-                                            <option value="1" <?php echo set_select('myselect', '1', TRUE); ?> >Pusat</option>
-                                            <option value="2" <?php echo set_select('myselect', '2'); ?> >Subcon</option>
-                                            </select> 
+                                            <label>No Rekening</label>
+                                            <input type="text" name="no_rekening" class="form-control" placeholder="No Rekening">
                                             </div>
 
-                      <div class="form-group">
-                                            <label>Active</label>
-                                            <select class="form-control" name="active">
-                                            <option value="1" <?php echo set_select('myselect', '1', TRUE); ?> >Active</option>
-                                            <option value="0" <?php echo set_select('myselect', '0'); ?> >Deactive</option>
-                                            </select> 
+                                            <div class="form-group">
+                                            <label>No KTP</label>
+                                            <input type="text" name="no_ktp" class="form-control" placeholder="No KTP">
+                                            </div>                                            
+
+                                            <div class="form-group">
+                                            <label>Nama Pensiun</label>
+                                            <input type="text" name="nm_pensiun" class="form-control" placeholder="Name Pensiun">
                                             </div>
+
+                                            <div class="form-group">
+                                            <label>Tgl Lahir</label>
+                                            <input type="text" name="tgl_lahir_pensiun" class="form-control" placeholder="YYYY-MM-DD">
+                                            </div>
+
+                                            <div class="form-group">
+                                            <label>Alamat Pensiun</label>
+                                            <input type="text" name="alamat_pensiun" class="form-control" placeholder="Alamat Pensiun">
+                                            </div>
+
+                                            <div class="form-group">
+                                            <label>No Telp</label>
+                                            <input type="text" name="no_tlp" class="form-control" placeholder="No Tlp">
+                                            </div>
+
+                                           
+
 
                                         </div>
                                         <div class="modal-footer">
@@ -92,10 +105,13 @@
                                     <thead>
                                         <tr>
                                             <th>Options</th>
-                                            <th>ID Perusahaan</th>
-                                            <th>Perusahaan</th>
-                                            <th>Jenis</th>
-                                            <th>Status</th>
+                                            <th>No. Pensiun</th>
+                                            <th>No. Rekening</th>
+                                            <th>No. KTP</th>
+                                            <th>Nama Pensiun</th>
+                                            <th>Tanggal Lahir</th>
+                                            <th>Alamat</th>
+                                            <th>No. Tlp</th>
                                             
                                             
                                         </tr>
@@ -104,33 +120,22 @@
                                      
                                     <?php
                                               
-                                                        foreach ($listperusahaan->result() as $rows) {
+                                                        foreach ($listpensiun->result() as $rows) {
                                                       ?>
                                                         <tr>
-<<<<<<< HEAD
-                                                                                <td nowrap><? if($session_level == 1 ){ ?><a href="perusahaan/delete/<?= $rows->id_perusahaan?>">
-                                                                                    <button class="btn btn-danger" >
-                                                                                        Delete
-																				</button></a><? } ?>
-                                                                                    <a href="perusahaan/formupdate/<?= $rows->id_perusahaan?>">
-                                                                                    <button class="btn btn-warning" >
-=======
-                                                                                <td nowrap><a href="perusahaan/delete/<?= $rows->id_perusahaan?>">
-                                                                                    <button class="btn btn-primary" >
-                                                                                        Delete
-                                                                                    </button></a>
-                                                                                    <a href="perusahaan/formupdate/<?= $rows->id_perusahaan?>">
-                                                                                    <button class="btn btn-primary" >
->>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
-                                                                                        Update
-                                                                                    </button></a>                                                        
-                                                                                </td>
-                                                          <td><?= $rows->id_perusahaan?></td>
-                                                          <td><?= $rows->nm_perusahaan?></td>
-                                                                                <td><?php if($rows->jenis == 1){echo "Pusat";}else{echo "Subcon";} ?></td>
-                                                                                <td><?php if($rows->active == 1){echo "Active";}else{echo "Deactive";} ?></td>
-                                                                                
-                                                
+                                                            <td nowrap>
+                                                            <a href="pensiun/delete/<?= $rows->no_pensiun?>">
+                                                            <button class="btn btn-primary" >Delete</button></a>
+                                                            <a href="pensiun/formupdate/<?= $rows->no_pensiun?>">
+                                                            <button class="btn btn-primary" >Update</button></a>                    
+                                                            </td>
+                                                            <td><?= $rows->no_pensiun?></td>
+                                                            <td><?= $rows->no_rekening?></td>
+                                                            <td><?= $rows->no_ktp?></td>
+                                                            <td><?= $rows->nm_pensiun?></td>
+                                                            <td><?= $rows->tgl_lahir_pensiun?></td>
+                                                            <td><?= $rows->alamat_pensiun?></td>
+                                                            <td><?= $rows->no_tlp?></td>                  
                                                         </tr>
                                     <? } ?>
                   </tbody>   

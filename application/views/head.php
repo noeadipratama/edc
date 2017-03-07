@@ -1,6 +1,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<<<<<<< HEAD
     <title>IMS Indoproc v1.0.0</title>
+=======
+    <title>EDC - KSU Sarina v1.0.0</title>
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -20,11 +24,16 @@
     <link rel="stylesheet" href="<?= base_url()?>assets/dist/css/skins/_all-skins.min.css">
     <!-- DataTables -->
     <link rel="stylesheet" href="<?= base_url()?>assets/plugins/datatables/dataTables.bootstrap.css">
+<<<<<<< HEAD
     <!-- Date Picker -->
     <link rel="stylesheet" href="<?=base_url();?>assets/css/jquery-ui.css">
     <!-- Select2 -->
     
 	<link href="<?=base_url();?>assets/plugins/select2/select2.min.css" rel="stylesheet">
+=======
+    
+
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

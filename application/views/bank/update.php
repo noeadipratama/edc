@@ -5,11 +5,7 @@
 
   </head>
 
-<<<<<<< HEAD
-  <body class="sidebar-mini wysihtml5-supported skin-red-light">
-=======
   <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
->>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -21,7 +17,7 @@
         <!-- Judul Halaman -->
         <section class="content-header">
           <h1>
-            Perusahaan
+            Bank
           </h1>
         </section>
 
@@ -34,35 +30,34 @@
                     <div class="panel panel-default">
                         <!-- panel-heading -->
                         <div class="panel-heading">
-                            Form Update Perusahaan
+                            Form Update Bank
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                                             <?php                                                        
-                                            foreach ($listperusahaanselect->result() as $rows) {
+                                            foreach ($listbankselect->result() as $rows) {
                                             ?>
                                             <?php echo validation_errors(); ?>
 
-                                            <?php echo form_open('perusahaan/Update'); ?>
+                                            <?php echo form_open('bank/Update'); ?>
                                             
                                             <div class="form-group">
-                                            <label>ID Perusahaan</label>
-                                            <input type="text" name="id_perusahaan" class="form-control" placeholder="ID perusahaan" value="<?= $rows->id_perusahaan?>" readonly>
+                                            <label>ID bank</label>
+                                            <input type="text" name="id_bank" class="form-control" placeholder="ID Bank" value="<?= $rows->id_bank?>" readonly>
                                             </div>
 
                                             <div class="form-group">
-                                            <label>Perusahaan</label>
-                                            <input type="text" name="nm_perusahaan" class="form-control" placeholder="Name perusahaan" value="<?= $rows->nm_perusahaan?>">
+                                            <label>Bank</label>
+                                            <input type="text" name="nm_bank" class="form-control" placeholder="Name Bank" value="<?= $rows->nm_bank?>">
+                                            </div>
+
+                                            <div class="form-group">
+                                            <label>Alamat</label>
+                                            <input type="text" name="alamat_bank" class="form-control" placeholder="Alamat Bank" value="<?= $rows->alamat_bank?>">
                                             </div>                                            
 
 
-                                            <div class="form-group">
-                                            <label>Jenis</label>
-                                            <select class="form-control" name="jenis">
-                                            <option value="1" <?php if ($rows->jenis == 1){echo set_select('myselect', '1',TRUE);} ?> >Pusat</option>
-                                            <option value="2" <?php if ($rows->jenis == 2){echo set_select('myselect', '2',TRUE);} ?> >Subcon</option>                                            
-                                            </select> 
-                                            </div>
+                                           
 
                                             <div class="form-group">
                                             <label>Active</label>
@@ -74,7 +69,7 @@
 
                                             <div class="form-group">
                                             <input type="submit" value="Save" class="btn btn-primary">
-                                            <a href="<?=base_url();?>index.php/perusahaan"><input type="button" value="Cancel" class="btn btn-default"></a>
+                                            <a href="<?=base_url();?>index.php/bank"><input type="button" value="Cancel" class="btn btn-default"></a>
                                             </div>
                                             <?php echo form_close(); ?>
                                             <? } ?>  

@@ -5,7 +5,11 @@
 
   </head>
 
+<<<<<<< HEAD
   <body class="sidebar-mini wysihtml5-supported skin-red-light">
+=======
+  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -95,11 +99,19 @@
                                                       ?>
                                                         <tr>
                                                                                 <td nowrap><a href="level/delete/<?= $rows->id_level?>">
+<<<<<<< HEAD
                                                                                     <button class="btn btn-danger" >
                                                                                         Delete
                                                                                     </button></a>
                                                                                     <a href="level/formupdate/<?= $rows->id_level?>">
                                                                                     <button class="btn btn-warning" >
+=======
+                                                                                    <button class="btn btn-primary" >
+                                                                                        Delete
+                                                                                    </button></a>
+                                                                                    <a href="level/formupdate/<?= $rows->id_level?>">
+                                                                                    <button class="btn btn-primary" >
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
                                                                                         Update
                                                                                     </button></a>                                                        
                                                                                 </td>

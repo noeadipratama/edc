@@ -5,7 +5,11 @@
 
   </head>
 
+<<<<<<< HEAD
   <body class="sidebar-mini wysihtml5-supported skin-red-light">
+=======
+  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -46,8 +50,11 @@
                                             <input type="text" name="id_user" class="form-control" placeholder="ID User" value="<?= $rows->id_user?>">
                                             </div>
 
+<<<<<<< HEAD
                                            
 
+=======
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
                                             <div class="form-group">
                                             <label>Nama User</label>
                                             <input type="text" name="nm_user" class="form-control" placeholder="Nama User" value="<?= $rows->nm_user?>">
@@ -63,8 +70,11 @@
                                             <input type="password" name="password" class="form-control alert-danger" placeholder="Password" value="">
                                             </div>
 
+<<<<<<< HEAD
                                            
 
+=======
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
                                             <div class="form-group">
                                             <label>Atasan</label>
                                             <select class="form-control" name="id_atasan">
@@ -93,9 +103,13 @@
                                             }
                                             ?>
                                             </select> 
+<<<<<<< HEAD
                                             </div>
 
                                             
+=======
+                                            </div> 
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
 
                                             <div class="form-group">
                                             <label>Cabang</label>

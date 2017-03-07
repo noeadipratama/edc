@@ -5,7 +5,11 @@
          
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
+<<<<<<< HEAD
             <li class="header">IMS Indoproc v1.0.0</li>
+=======
+            <li class="header">EDC KSU Sarina</li>
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
             <li><a href="<?=base_url();?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
             <?php 
                             foreach ($this->model_menu->getAllMenugroups($session_level)->result() as $rows)  

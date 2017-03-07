@@ -2040,6 +2040,7 @@ class CI_DB_active_record extends CI_DB_driver {
 
 		$this->_reset_run($ar_reset_items);
 	}
+<<<<<<< HEAD
 
 	function freeDBResource($dbh){
     while(mysqli_next_result($dbh)){
@@ -2048,6 +2049,8 @@ class CI_DB_active_record extends CI_DB_driver {
             }
         }
 	}
+=======
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
 }
 
 /* End of file DB_active_rec.php */

@@ -5,7 +5,11 @@
 
   </head>
 
+<<<<<<< HEAD
   <body class="sidebar-mini wysihtml5-supported skin-red-light">
+=======
+  <body class="sidebar-mini wysihtml5-supported skin-blue-light sidebar-collapse">
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
     <div class="wrapper">
 
       <?= $this->load->view('nav'); ?>
@@ -111,12 +115,21 @@
                                                         foreach ($listcabang->result() as $rows) {
                                                       ?>
                                                         <tr>
+<<<<<<< HEAD
                                                         <td nowrap=""><? if($session_level == 1 ){ ?><a href="cabang/delete/<?= $rows->id_cabang?>">
                                                                                     <button class="btn btn-danger" >
                                                                                         Delete
 														</button></a><? } ?>
                                                                                     <a href="cabang/formupdate/<?= $rows->id_cabang?>">
                                                                                     <button class="btn btn-warning" >
+=======
+                                                        <td nowrap=""><a href="cabang/delete/<?= $rows->id_cabang?>">
+                                                                                    <button class="btn btn-primary" >
+                                                                                        Delete
+                                                                                    </button></a>
+                                                                                    <a href="cabang/formupdate/<?= $rows->id_cabang?>">
+                                                                                    <button class="btn btn-primary" >
+>>>>>>> bfcce828bb17041a2e0fcf450e0b00b79ae7835c
                                                                                         Update
                                                                                     </button></a>                                                        
                                                                                 </td>
